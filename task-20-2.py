@@ -75,7 +75,7 @@ class LabourEmployee:
      def downloadMonthlyProgressReport(self):
          """
          This method download the monthly progress  report
-         :return:
+         :return:None
          """
          url=self.current_url
          response =requests.get(url)
@@ -89,7 +89,7 @@ class LabourEmployee:
      def close(self):
          """
          This method close the driver
-         :return:
+         :return:None
          """
          self.driver.quit()
 
